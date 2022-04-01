@@ -13,7 +13,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #404040;
+  background-color: #0d1a59;
   border-radius: 20px;
 }
 
@@ -359,6 +359,7 @@ main .skill-icons i {
   color: #fff;
 }
 
+/* contato */
 section.contato {
   margin-bottom: 20px;
 }
@@ -367,6 +368,8 @@ section.contato {
   background-color: #0d1a59b2;
   padding: 55px;
   text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .blue h1 {
@@ -407,17 +410,20 @@ address {
 .contato-icons .email i,
 .contato-icons .phone i {
   font-size: 2.1rem;
+  color: rgba(51, 51, 51, 0.7);
 }
 
 .contato-icons .email span,
 .contato-icons .phone span {
   font-size: 1.2rem;
   font-weight: bold;
+  font-family: "lato";
 }
 
 .socialIncons i {
   font-size: 1.44rem;
   cursor: pointer;
+  color: rgba(51, 51, 51, 0.7);
 }
 
 .socialMedia {
@@ -435,33 +441,38 @@ address {
 
 .socialMedia .bx-message-rounded-dots {
   font-size: 2.1rem;
+  color: rgba(51, 51, 51, 0.7);
 }
 
 .socialMedia span {
   font-size: 1.2rem;
   font-weight: bold;
+  font-family: "lato";
   margin: 5px 0;
-}
-
-.aicons:hover {
-  width: 45px;
-  height: 45px;
-  background-color: #0d1a59b2;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 footer {
   background-color: #0d1a59;
   text-align: center;
+}
+
+.arrow {
+  position: fixed;
+  right: 1%;
+  bottom: -2%;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.up {
+  bottom: 2%;
+  opacity: 1;
+}
+
+.arrow i {
+  font-size: 3rem;
+  color: #0d1a59;
 }
 
 @media screen and (max-width: 768px) {
@@ -470,16 +481,23 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 !important;
+    padding: 10px 0 !important;
     text-align: center;
   }
 
-  .box-container{
-    margin-top: -60px !important;
+  .box-container {
+    margin-top: -80px !important;
   }
-  .img-text img{
-      width: 120px !important;
-      height: 100px !important;
+  .img-text img {
+    width: 120px !important;
+    height: 100px !important;
+  }
+  .contato-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .capa img{
+    height: 38vh;
   }
 }
 
