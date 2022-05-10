@@ -496,7 +496,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .capa img{
+  .capa img {
     height: 38vh;
   }
 }
